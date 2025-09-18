@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Zadanie 5 - Matusiak</title>
+    <script type="text/javascript">
+        function okno_zamknij() {
+            window.close();
+        }
+
+        function WinOpen_matusiak_1() {
+            window.open("grafika1.html", "okno1", "toolbar=no,directories=no,menubar=no,height=300,width=250,top=100,left=100");
+        }
+
+        function WinOpen_matusiak_2() {
+            window.open("grafika2.html", "okno2", "toolbar=no,directories=no,menubar=no,height=300,width=250,top=100,left=350");
+        }
+
+        function WinOpen_matusiak_3() {
+            window.open("grafika3.html", "okno3", "toolbar=no,directories=no,menubar=no,height=300,width=250,top=100,left=600");
+        }
+
+        function WinOpen_matusiak_4() {
+            window.open("grafika4.html", "okno4", "toolbar=no,directories=no,menubar=no,height=300,width=250,top=100,left=850");
+        }
+    </script>
+</head>
+<body>
+    <h2 style="color: red; font-size: 1cm;">Wykonał: Dawid Matusiak</h2>
+    <p style="color: blue; font-size: 1cm;">Mój numer w dzienniku: 16</p>
+    <p style="color: green; font-size: 1cm;">(16 mod 4) = 0 → Układ 4</p>
+
+    <center>
+        <input type="button" value="grafika1" onclick="WinOpen_matusiak_1()">
+        <input type="button" value="grafika2" onclick="WinOpen_matusiak_2()">
+        <input type="button" value="grafika3" onclick="WinOpen_matusiak_3()">
+        <input type="button" value="grafika4" onclick="WinOpen_matusiak_4()">
+    </center>
+
+    <br><br>
+    <input type="button" value="Zamknij okno" onclick="okno_zamknij()">
+</body>
+</html>
