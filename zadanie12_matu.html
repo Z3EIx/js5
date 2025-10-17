@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+        <body>
+        <div style="color:red;font-size: 40px;">
+        <script lang="JavaScript">
+            var D1_Daw=prompt("Od Data1=","");
+            var G1_Daw=prompt("Od Godzina1=","");
+            var D2_Daw=prompt("Do Data2=","");
+            var G2_Daw=prompt("Do Godzina2=","");
+            var seconds;
+            var a=parseFloat(D1_Daw);
+            var b=parseFloat(D2_Daw);
+            var c=parseFloat(G1_Daw);
+            var d=parseFloat(G2_Daw);
+             seconds=((a-b)*24*60*60) + ((c-d)*3600);
+            document.write("Ilość sekund między dniami "+a+" i "+b+" i godzinami "+c+", "+d+" = "+seconds+"<br>");
+            function okno_zamknij(){
+                window.close()
+            }
+        </script>
+        </div>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij('')"/>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1><b>Rodzaje okienek</b></h1>
+       <ul>
+        <li>Okienko alert – wyświetlająca okienko dialogowe z informacją i przyciskiem OK, </li>
+        <li>Okienko prompt – generująca okno, w którym użytkownik może wpisać wartość, zwracaną następnie do programu.</li>
+        <li>Okienko confirm służy do tego, aby użytkownik coś potwierdził (stąd nazwa confirm).</li>
+       </ul>
+       <h1><b>Konwersje liczb</b></h1>
+       <p>Wczytanie zmiennej z użyciem prompt wykonywane jest jako ciąg znaków dlatego konieczna jest konwersji z ciągu znaków na wartości liczbowe aby wykonywac obliczenia.</p>
+       <p>parseFloat(zmienna) - konwersja zmiennej do typu float </p>
+       <p>parseInt(zmienna) - konwersja zmiennej do typu int (liczbowego) </p>
+       <p>toString(zmienna) - konwersja zmiennej do typu łańcuchowego</p>
+
+       <h1><b>Zasady przy nadawaniu nazw zmiennym</b></h1>
+       <ol>
+        <li>Nazwa zmiennej musi się zaczynać od litery, znaku "$" lub "_", może zawierać tylko litery (bez polskich znaków), cyfry oraz "$" i "_". Poprawne nazwy zmiennych: zmienna1, $wynik, _rozmiar, wynik1, Rekord, $_gracz Błędne nazwy zmiennych: 1zmienna, wynik gry, wysokosc&szerokosc, wynik.rekord, &gracz, wysokość, imie+nazwisko. </li>
+        <li>Wielkość liter ma znaczenie. Rekord i rekord to dwie różne zmienne! Jest to bardzo częsta przyczyna błędów w kodzie początkujących programistów. </li>
+        <li>Należy nie używać słów kluczowych JavaScript jako nazw zmiennych. </li>
+       </ol>
+        <h1><b>Omów typy zmiennych - Javascript</b></h1>
+        <p>W JavaScript nie ma możliwości definiowania różnych typów zmiennych tak jak w C++, typy zmiennych są definiowane w trakcie ich przypisywania. </p>
+        <p>Podstawowe zmienne liczbowe w JavaScript to:</p>
+        <p>Number -> Typ liczbowy</p>
+        <ul>
+            <li>zmienna całkowite</li>
+            <li>zmiennoprzecinkowe</li>
+        </ul>
+        <p>String -> Typ tekstowy</p>
+        <p>Boolea -> Typ logiczny</p>
+        <p>Null -> Pusta zawatość</p>
+        <p>Undefined -> Typ niezidetyfikowany</p>
+        <p>Object -> Obiekt</p>
+        <input type="button" value="zamknij okno" onclick=" window.close()"/>
+    </body>
+</html>

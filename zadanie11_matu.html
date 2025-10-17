@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+        <body>
+        <div style="color:red;font-size: 40px;">
+        <script lang="JavaScript">
+            var D1_daw=prompt("Data1=","");
+            var D2_daw=prompt("Data2=","");
+            var seconds;
+            var a=parseFloat(D1_daw);
+            var b=parseFloat(D2_daw);
+             seconds=(a-b)*24*60*60;
+            document.write("Ilość sekund między dniami "+a+" i "+b+" = "+seconds+"<br>");
+            function okno_zamknij(){
+                window.close()
+            }
+        </script>
+        </div>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij('')"/>
+    </body>
+</html>
