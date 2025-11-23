@@ -1,0 +1,51 @@
+<html>
+    <body>
+        <textarea cols="150" rows="60">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script language="JavaScript">
+        function Pole_matusiak(a, b){
+            a_mat = parseFloat(a);
+            b_mat = parseFloat(b);
+            P_wynik = a_mat * b_mat;
+            document.getElementsByName('pole')[0].value=P_wynik;
+            pokaz1.innerHTML="Pole="+P_wynik;
+        }
+        function obwod_matusiak(a, b){
+            a_mat = parseFloat(a);
+            b_mat = parseFloat(b);
+            obowod_wynik = a_mat + b_mat;
+            document.getElementsByName('obw')[0].value=obowod_wynik;
+            pokaz2.innerHTML="Obowod="+obowod_wynik;
+        }
+
+    </script>
+</head>
+<body>
+    Obliczanie Pola i obwodu
+    <br> <br>
+    <form name="formularz" action="..." onsubmit="Pole_matusiak(this.promien.value,this.wysokosc.value);
+obwod_matusiak(this.promien.value,this.wysokosc.value);return false">
+ Podaj a=
+ <input size="6" name="promien">
+ Podaj b=
+ <input size="6" name="wysokosc">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ Pole=
+ <input size="6" name="pole">
+ Obowód=
+ <input size="6" name="obw">
+</form>
+<table>
+ <tr id="pokaz1"></tr>
+ <tr id="pokaz2"></tr>
+</table>
+</body>
+</html>
+        </textarea>
+    </body>
+</html>

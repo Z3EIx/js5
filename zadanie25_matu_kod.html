@@ -1,0 +1,49 @@
+ <html>
+    <body>
+        <textarea cols="150" rows="60">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h3>Rozpady promieniotwórcze</h3>
+
+    <form name="zad25" onsubmit="oblicz(); return false;">
+        N0 (szt): <input name="N0" value="1"><br><br>
+        t (lat): <input name="t" value="1"><br><br>
+        T1/2 (lat): <input name="T12" value="5700"><br><br>
+        <input type="submit" value="Oblicz">
+    </form>
+
+    <div id="wyniki" style="margin-top:12px;"></div>
+
+    <script>
+    function oblicz(){
+        var N0 = parseFloat(document.zad25.N0.value);
+        var t  = parseFloat(document.zad25.t.value);
+        var T12= parseFloat(document.zad25.T12.value);
+
+        if (isNaN(N0) || isNaN(t) || isNaN(T12) || T12 <= 0) {
+            alert('Sprawdź dane wejściowe (liczby, T1/2 > 0).');
+            return;
+        }
+
+        var lambda = Math.log(2) / T12;          // [1/rok]
+        var N = N0 * Math.exp(-lambda * t);
+
+        var out = '';
+        out += 'N0 = ' + N0.toFixed(2) + ' [sztuk]<br>';
+        out += 't  = ' + t.toFixed(2)  + ' [lat]<br>';
+        out += 'T1/2 = ' + T12.toFixed(2) + ' [lat]<br>';
+        out += 'λ = ' + lambda.toFixed(7) + ' [1/rok]<br>';
+        out += 'N = ' + N.toFixed(2) + ' [sztuk]<br>';
+
+        document.getElementById('wyniki').innerHTML = out;
+    }
+    </script>
+</body>
+</html>
+            </textarea>
+        </body>
+</html>

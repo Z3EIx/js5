@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <textarea cols="150" rows="60">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script type="text/javascript">
+        var ay = parseFloat(prompt('Wczytaj XA',''));
+        var ax = parseFloat(prompt('Wczytaj YA',''));
+        var bx = parseFloat(prompt('Wczytaj XB',''));
+        var by = parseFloat(prompt('Wczytaj YB',''));
+        var cx = parseFloat(prompt('Wczytaj XC',''));
+        var cy = parseFloat(prompt('Wczytaj YC',''));
+
+        function AB_mat (ay, ax, bx, by){
+            var ab = Math.sqrt(Math.pow((ax - bx),2) + Math.pow((ay - by), 2))
+            return ab;
+        }
+        function BC_mat (by, bx, cx, cy){
+            var bc = Math.sqrt(Math.pow((bx - cx),2) + Math.pow((by - cy), 2))
+            return bc;
+        }
+        function AC_mat (ay, ax, cx, cy){
+            var ac = Math.sqrt(Math.pow((ax - cx),2) + Math.pow((ay - cy), 2))
+            return ac;
+        }
+        document.write("Odległość między punktami A("+ax+", "+ay+") i B("+bx+", "+by+") równa się "+AB_mat(ax, ay, bx,by).toFixed(2)+"<br>"); 
+        document.write("Odległość między punktami B("+bx+", "+by+") i C("+cx+", "+cy+") równa się "+BC_mat(bx, by, cx,cy).toFixed(2)+"<br>"); 
+        document.write("Odległość między punktami A("+ax+", "+ay+") i C("+cx+", "+cy+") równa się "+AC_mat(ax, ay, cx,cy).toFixed(2)+"<br>"); 
+    </script>
+</body>
+</html>
+        </textarea>
+    </body>
+</html>
